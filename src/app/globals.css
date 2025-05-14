@@ -75,3 +75,121 @@ body {
   color: #ffffff;
   font-family: "noto", "Baskin", serif;
 }
+
+@utility title-62 {
+  font: 700 3.875rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-48 {
+  font: 700 3rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-46 {
+  font: 700 2.875rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-40 {
+  font: 700 2.5rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-24 {
+  font: 700 1.5rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-18 {
+  font: 700 1.125rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility text-700-40 {
+  font: 700 2.5rem "noto", serif;
+}
+
+@utility text-700-32 {
+  font: 700 2rem "noto", serif;
+}
+
+@utility text-700-28 {
+  font: 700 1.75rem "noto", serif;
+}
+
+@utility text-700-24 {
+  font: 700 1.5rem "noto", serif;
+}
+
+@utility text-400-24 {
+  font: 400 1.5rem "noto", serif;
+}
+
+@utility text-700-22 {
+  font: 700 1.375rem "noto", serif;
+}
+
+@utility text-700-20 {
+  font: 700 1.25rem "noto", serif;
+}
+
+@utility text-400-20 {
+  font: 400 1.25rem "noto", serif;
+}
+
+@utility text-700-18 {
+  font: 700 1.125rem "noto", serif;
+}
+
+@utility text-400-18 {
+  font: 400 1.125rem "noto", serif;
+}
+
+@utility text-300-18 {
+  font: 300 1.125rem "noto", serif;
+}
+
+@utility text-700-16 {
+  font: 700 1rem "noto", serif;
+}
+
+@utility text-400-16 {
+  font: 400 1rem "noto", serif;
+}
+
+@utility text-300-16 {
+  font: 300 1rem "noto", serif;
+}
+
+@utility text-700-14 {
+  font: 700 0.875rem "noto", serif;
+}
+
+@utility text-400-14 {
+  font: 400 0.875rem "noto", serif;
+}
+
+@utility text-300-14 {
+  font: 300 0.875rem "noto", serif;
+}
+
+@utility text-700-12 {
+  font: 700 0.75rem "noto", serif;
+}
+
+@utility text-400-12 {
+  font: 400 0.75rem "noto", serif;
+}
+
+@utility text-300-12 {
+  font: 300 0.75rem "noto", serif;
+}
+
+@utility text-400-10 {
+  font: 400 0.625rem "noto", serif;
+}
+
+@utility text-300-10 {
+  font: 300 0.625rem "noto", serif;
+}
