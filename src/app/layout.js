@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./../components/styles/index.css";
+import Header from "@/components/layout/Header";
 
 export const metadata = {
   title: "최애의 포토",
