@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BR B';
+    src: url('BRB.woff2') format('woff2'),
+        url('BRB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
