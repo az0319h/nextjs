@@ -39,6 +39,7 @@ import Link from "next/link";
 import React from "react";
 import Sort from "@/components/ui/Sort";
 import { useQuery } from "@tanstack/react-query";
+import { Title } from "@/components/ui/Title";
 
 const mockdata = [
   // 가데이터 ↔ DB에 저장된 데이터 (안 씀)
@@ -74,6 +75,14 @@ export default function HomePage() {
 
   return (
     <div className="w-full">
+      HomePage
+      <Title
+        title="마이페이지"
+        buttonText="수정하기"
+        onButtonClick={() => console.log("수정")}
+        font="titleLg_Noto"
+        buttonColor="yellow"
+      />
       HomePage eddfered
       <Suspense fallback={null}>
         <CardListPageEx />
