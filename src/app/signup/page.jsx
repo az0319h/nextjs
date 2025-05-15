@@ -2,7 +2,8 @@
 
 import InputField from "@/components/ui/InputField";
 import PasswordField from "@/components/ui/PasswordField";
-import { useState } from "react";
+import Search from "@/components/ui/Search";
+import { useEffect, useState } from "react";
 
 export default function ExampleFormPage() {
   const [email, setEmail] = useState("");
@@ -16,6 +17,15 @@ export default function ExampleFormPage() {
 
   const [confirmPassword, setConfirmPassword] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
+
+  // Search
+  const [keyword, setKeyword] = useState("");
+
+  // Search 간단 예시
+  useEffect(() => {
+    // fetch 데이터 연결해서 하기(아래는 예시입니다.)
+    // const { data } = await getArticles(keyword ? { word: keyword } : {});
+  }, [keyword]);
 
   const MAX_NAME_LENGTH = 30;
 
@@ -53,6 +63,8 @@ export default function ExampleFormPage() {
 
     if (!value) {
       setPasswordError("비밀번호를 입력해 주세요");
+    } else if (value.length < 8) {
+      setPasswordError("8자 이상 입력해 주세요");
     } else {
       setPasswordError("");
     }
@@ -77,7 +89,7 @@ export default function ExampleFormPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black p-6 space-y-6">
+    <div className="min-h-screen p-6 space-y-6">
       <InputField
         label="이메일"
         placeholder="이메일을 입력해 주세요"
@@ -116,6 +128,8 @@ export default function ExampleFormPage() {
         onChange={handleConfirmPasswordChange}
         error={confirmPasswordError}
       />
+
+      <Search onSearch={setKeyword} />
     </div>
   );
 }
