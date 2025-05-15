@@ -8,6 +8,7 @@ export default function HomePage() {
       <Link href="/signup">
         <div>Input컴포넌트 확인용 페이지 클릭</div>
       </Link>
+      배포 확인(배포에 문제가 있는 확인)
     </div>
   );
 }
