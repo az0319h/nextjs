@@ -95,6 +95,7 @@ export default function HomePage() {
       {data?.map((data) => {
         return <div key={data.id}>{data.name}</div>;
       })}
+      우리의 페이지는 과연 vercel에?
     </div>
   );
 }
