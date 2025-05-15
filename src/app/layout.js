@@ -11,11 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body>
-        <Header />
-        <main className="mx-auto min-h-screen w-full sm:max-w-[345px] md:max-w-[704px] lg:max-w-[1480px]">
-          <Providers>{children}</Providers>
-        </main>
+      <body className="w-full">
+        <div className="mx-auto min-h-screen max-w-[1480px] p-[30px] md:px-10">
+          <Header />
+          <main>
+            <Providers>{children}</Providers>
+          </main>
+        </div>
       </body>
     </html>
   );
