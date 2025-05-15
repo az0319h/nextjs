@@ -96,6 +96,16 @@ body {
   letter-spacing: -0.03rem;
 }
 
+@utility title-36 {
+  font: 700 2.25rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
+@utility title-30 {
+  font: 700 1.875rem "baskin", serif;
+  letter-spacing: -0.03rem;
+}
+
 @utility title-24 {
   font: 700 1.5rem "baskin", serif;
   letter-spacing: -0.03rem;
