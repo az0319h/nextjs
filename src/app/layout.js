@@ -1,5 +1,6 @@
 import "./globals.css";
-import "./../components/styles/index.css";
+
+import Header from "@/components/layout/Header";
 
 export const metadata = {
   title: "최애의 포토",
@@ -10,10 +11,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body>
-        <main className="mx-auto min-h-screen w-full sm:max-w-[375px] md:max-w-[744px] lg:max-w-[1920px]">
-          {children}
-        </main>
+        <div className="flex flex-col min-h-full px-4 md:px-5 lg:px-0 max-w-full lg:max-w-[1480px] mx-auto">
+          {/* Header Component */}
+          <main className="flex-1">
+            {children}
+          </main>
+          {/* Footer Component */}
+        </div>
       </body>
     </html>
   );
-}
+} 
