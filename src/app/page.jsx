@@ -74,7 +74,7 @@ export default function HomePage() {
 
   return (
     <div className="w-full">
-      HomePage
+      HomePage eddfered
       <Suspense fallback={null}>
         <CardListPageEx />
       </Suspense>
