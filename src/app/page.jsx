@@ -1,14 +1,13 @@
-export default function Home() {
+import Link from "next/link";
+import React from "react";
+
+export default function HomePage() {
   return (
-    <>
-      {/* <div className="grid gap-3 grid-cols-2 md:grid-cols-3 [&>div]:text-center [&>div]:bg-amber-500">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        // UI테스트용 코드
-        //  주석은 모두 지워주세요!
-      </div> */}
+    <div>
       HomePage
-    </>
-  )
+      <Link href="/signup">
+        <div>Input컴포넌트 확인용 페이지 클릭</div>
+      </Link>
+    </div>
+  );
 }
