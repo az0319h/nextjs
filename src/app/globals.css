@@ -51,12 +51,12 @@
   font-style: normal;
   font-display: swap;
 }
- 
+
 @theme inline {
   --breakpoint-sm: 375px;
   --breakpoint-md: 744px;
   --breakpoint-lg: 1480px;
- 
+
   --color-my-black: #0f0f0f;
   --color-gray-500: #161616;
   --color-gray-400: #5a5a5a;
