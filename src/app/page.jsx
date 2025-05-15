@@ -74,6 +74,15 @@ export default function HomePage() {
 
   return (
     <div className="w-full">
+      HomePage
+        <Title 
+      title="마이페이지" 
+      buttonText="수정하기" 
+      onButtonClick={() => console.log("수정")} 
+      font="titleLg_Noto" 
+      buttonColor="yellow" 
+    />
+    
       HomePage eddfered
       <Suspense fallback={null}>
         <CardListPageEx />
