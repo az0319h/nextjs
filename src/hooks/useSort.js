@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function useSort() {
   const [isOpen, setIsOpen] = useState(false);
-  const [order, setOrder] = useState("낮은 가격순");
+  const [order, setOrder] = useState("낮은 가격순"); // 정렬 옵션
   const sortRef = useRef(null);
 
   const toggle = () => setIsOpen((prev) => !prev);
@@ -15,7 +15,7 @@ export default function useSort() {
     close();
   };
 
-  // 정렬 설정
+  // orderBy param 변환
   function getSortParam(label = order) {
     switch (label) {
       case "낮은 가격순":

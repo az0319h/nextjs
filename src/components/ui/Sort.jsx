@@ -5,11 +5,11 @@ import { MdArrowDropDown } from "react-icons/md";
 import clsx from "clsx";
 import useSort from "@/hooks/useSort";
 
-const options = ["낮은 가격순", "높은 가격순", "최신순"];
+const options = ["낮은 가격순", "높은 가격순", "최신순"]; // 정렬 옵션
 
 export default function Sort({ onClick }) {
   const { isOpen, order, sortRef, toggle, handleSelect, getSortParam } =
-    useSort();
+    useSort(); // hooks에서 만든 함수들 가져옴
 
   function handleOptionClick(option) {
     handleSelect(option);
